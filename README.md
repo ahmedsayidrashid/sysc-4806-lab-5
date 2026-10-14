@@ -4,4 +4,4 @@ Ahmed Rashid
 
 Azure deployment: `https://<your-app-name>.azurewebsites.net`
 
-![Java CI with Maven](https://github.com/<user>/<repo>/actions/workflows/maven.yml/badge.svg)
+[![Java CI with Maven](https://github.com/ahmedsayidrashid/sysc-4806-lab-5/actions/workflows/maven.yml/badge.svg)](https://github.com/ahmedsayidrashid/sysc-4806-lab-5/actions/workflows/maven.yml)
