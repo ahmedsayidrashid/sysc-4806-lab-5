@@ -29,3 +29,28 @@ PUT http://localhost:8080/api/addressbook/1/buddy/2
 
 ### 6. View the address book
 GET http://localhost:8080/addressbook/1
+
+### 7. Read the address book as JSON
+GET http://localhost:8080/api/addressbook/1
+
+### 8. Read a buddy
+GET http://localhost:8080/api/buddy/1
+
+### 9. Update a buddy
+PUT http://localhost:8080/api/buddy/1
+Content-Type: application/json
+
+{
+  "name": "Ahmed",
+  "phoneNumber": "613-555-4444",
+  "address": "75 Laurier Ave"
+}
+
+### 10. Remove Buddy 2 from AddressBook 1
+DELETE http://localhost:8080/api/addressbook/1/buddy/2
+
+### 11. Delete a buddy entirely
+DELETE http://localhost:8080/api/buddy/2
+
+### 12. Delete an address book
+DELETE http://localhost:8080/api/addressbook/1

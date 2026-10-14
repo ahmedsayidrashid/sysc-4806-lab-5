@@ -19,4 +19,9 @@ class AddressBookIntegrationTest {
     void requestsMatchLabScript() {
         AddressBookApiChecks.createBookAndAddBuddies(client);
     }
+
+    @Test
+    void crudOperations() {
+        AddressBookApiChecks.crudOperations(client);
+    }
 }
