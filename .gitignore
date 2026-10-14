@@ -1,0 +1,7 @@
+target/
+.idea/
+*.pdf
+*.iml
+.classpath
+.project
+.settings/

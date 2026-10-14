@@ -1,0 +1,31 @@
+### 1. Create a new AddressBook (Returns ID 1)
+POST http://localhost:8080/api/addressbook
+
+### 2. Create a new BuddyInfo (Returns ID 1)
+POST http://localhost:8080/api/buddy
+Content-Type: application/json
+
+{
+  "name": "Ahmed",
+  "phoneNumber": "613-555-0123",
+  "address": "1125 Colonel By Drive"
+}
+
+### 3. Create another BuddyInfo (Returns ID 2)
+POST http://localhost:8080/api/buddy
+Content-Type: application/json
+
+{
+  "name": "Babak",
+  "phoneNumber": "613-555-0999",
+  "address": "123 Main Street"
+}
+
+### 4. Add Buddy 1 to AddressBook 1
+PUT http://localhost:8080/api/addressbook/1/buddy/1
+
+### 5. Add Buddy 2 to AddressBook 1
+PUT http://localhost:8080/api/addressbook/1/buddy/2
+
+### 6. View the address book
+GET http://localhost:8080/addressbook/1
